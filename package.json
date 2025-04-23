@@ -1,0 +1,14 @@
+{
+  "name": "reviewer",
+  "version": "1.0.0",
+  "description": "Easy Json based test review builder",
+  "main": "Main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "author": "Yadnelis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

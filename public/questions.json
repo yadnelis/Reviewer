@@ -1,0 +1,152 @@
+{
+    "QuestionTypes": [
+        "radio",
+        "checkbox",
+        "torf",
+        "text"
+    ],
+    "Questions": [
+        {
+            "prompt": "Que significa OTDR",
+            "answer": "Optical Time Domain Reflectometer",
+            "message": "Answer: Optical Time Domain Reflectometer",
+            "type": "text"
+        },
+        {
+            "prompt": "El conector de fibra ST se parece al conector RJ-45",
+            "answer": false,
+            "type": "torf"
+        },
+        {
+            "tag": "puertos",
+            "prompt": "Para que se usa el puerto 22?",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "SSH" ,
+                "Telnet",
+                "TFTP",
+                "Seguridad SSL"
+            ],
+            "answer": "SSH"
+        },
+        {
+            "tag": "puertos",
+            "prompt": "Para que se usa el puerto 23?",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "SSH" ,
+                "Telnet" ,
+                "TFTP",
+                "Seguridad SSL"
+            ],
+            "answer": "Telnet"
+        },
+        {
+            "tag": "puertos",
+            "prompt": "Para que se usa el puerto 69?",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "SSH" ,
+                "Telnet" ,
+                "TFTP",
+                "Seguridad SSL"
+            ],
+            "answer": "TFTP"
+        },
+        {
+            "tag": "puertos",
+            "prompt": "Para que se usa el puerto 443?",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "SSH" ,
+                "Telnet" ,
+                "TFTP",
+                "Seguridad SSL"
+            ],
+            "answer": "Seguridad SSL"
+        },
+        {
+            "tag": "fibra",
+            "prompt": "Que significan las siglas del conector ST?",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Single Transmit" ,
+                "Single Tip" ,
+                "Short Tip",
+                "Short Transit"
+            ],
+            "answer": "Single Tip"
+        },
+        {
+            "tag": "fibra",
+            "prompt": "Que significan las siglas del conector SC?",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Subscriber Connector" ,
+                "Subscriber Carrier" ,
+                "Short Connector",
+                "Short Carrier"
+            ],
+            "answer": "Subscriber Connector"
+        },
+        {
+            "tag": "fibra",
+            "prompt": "El conector SC se parece al connector RJ-45",
+            "type": "torf",
+            "answer": true
+        },
+        {
+            "tag": "fibra",
+            "prompt": "El conector ST se parece al connector BNC",
+            "type": "torf",
+            "answer": true
+        },
+        {
+            "tag": "fibra",
+            "prompt": "Que es el FDDI?",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Un conjunto de estandares hechos por ISO para redes de LAN de Fibra Óptica. Se enfoca en una topología Token Ring con comunicación full-duplex.",
+                "Es un conector especial para los cables de fibra óptica single mode. Se usa en redes WAN."
+            ],
+            "answer": "Un conjunto de estandares hechos por ISO para redes de LAN de Fibra Óptica. Se enfoca en una topología Token Ring con comunicación full-duplex.",
+            "message": "FDDI significa Fiber Distributed Data Interface"
+        },
+        {
+            "tag": "fibra",
+            "prompt": "El connector BNC se usa para fibra óptica",
+            "type": "torf",
+            "answer": false,
+            "message": "El connector BNC se usa para cables Coaxiales"
+        },
+        {
+            "tag": "fibra",
+            "prompt": "La luz LED se usa para cables de Fibra Óptica de tipo: ",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Multimode",
+                "Single Mode"
+            ],
+            "answer": "Multimode"
+        },
+        {
+            "tag": "fibra",
+            "prompt": "La luz laser se usa para cables de Fibra Óptica de tipo: ",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Multimode",
+                "Single Mode"
+            ],
+            "answer": "Single Mode"
+        }
+    ]    
+}
