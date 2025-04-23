@@ -1,10 +1,22 @@
 const express = require('express')
-const app = express()
+const http = require('http');
 
-app.get('/api', async (req, res) => {
-    res.json({'users': ['userOne', 'userTwo', 'userThree']})
-})
+const port = process.env.PORT || 4000;
+const app = express();
 
-app.use(express.static('public'))
+async function main () {
+    app.use(express.static('./public'));
+    
+    app.get('/', (req, res) => {
+        res.sendFile('index.html', {root: './public'});
+    })
+    app.get('/questions', (req, res) => {
+        res.sendFile('questions.json', {root: './public'});
+    })
+    
+    
+    let server = http.createServer(app);
+    await server.listen(port);
+}
 
-app.listen(5000, () => console.log("Server started on 5000"))
+main();
