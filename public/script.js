@@ -12,7 +12,7 @@ String.prototype.hashCode = function() {
   
 let queue = [];
 let current = null;
-fetch("questions.json").then(r => r.json())
+fetch("questions").then(r => r.json())
 .then(data => {
     queue = data.Questions.sort(() => 0.5 - Math.random());
     const q = queue[0];

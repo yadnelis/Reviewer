@@ -4,7 +4,8 @@
   "description": "Easy Json based test review builder",
   "main": "Main.js",
   "scripts": {
-    "test": "node main.js"
+    "test": "node main.js",
+    "start": "main.js"
   },
   "author": "Yadnelis",
   "license": "ISC",
