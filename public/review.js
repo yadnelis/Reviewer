@@ -4,16 +4,25 @@ fetch("questions.json").then(r => r.json())
 .then(data => {
     var cont = $("#questions-cont")
     queue = data.Questions.map(q => {
-        cont.append(
-            $("<div>")
+        cont
+        .append(
+            $("<p>")
+            .addClass("r-prompt")
+            .text(q.prompt)
+        )
+        .append(
+            $("<p>")
             .append(
-                $("<p>")
-                .text(q.prompt)
+                $("<span>")
+                .addClass("type rounded px-2 py1")
+                .addClass(q.type)
+                .text(q.type)
             )
-            .append(
-                $("<p>")
-                .text(q.answer)
-            )
+        )
+        .append(
+            $("<p>")
+            .addClass("r-answer")
+            .text(q.answer)
         )
     })
     const q = queue[0];

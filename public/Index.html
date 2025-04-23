@@ -12,18 +12,21 @@
 </head>
 <body>
     <nav>
+        <a href="/Index.html">Test</a>
         <a href="/review.html">Review</a>
     </nav>
-    <section>
+    <section class="pt-4">
+        <div class="d-flex flex-column justify-content-start mx-5 mb-3 mh-30">
+            <div class="correct rounded d-none py-1 px-2">Correct</div>
+            <div class="incorrect rounded d-none py-1 px-2">Incorrect</div>
+        </div>
+        <div id="questions-cont" class="ms-5"></div>
+        <div id="message" class="ms-5 mt-2"></div>
         <div class="pt-4">
-            <div class="d-flex justify-content-around">
-                <div class="correct rounded p-2 invisible">Correct</div>
-                <div class="incorrect rounded p-2 invisible">Incorrect</div>
+            <div class="d-flex flex-column justify-content-start ms-5 w-fit">
                 <button id="skip-btn"> Next question </button>
             </div>
         </div>
-        <div id="questions-cont" class="ms-5 mt-5"></div>
-        <div id="message" class="ms-5 mt-2"></div>
     </section>
 
 

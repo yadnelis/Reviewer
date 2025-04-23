@@ -12,7 +12,7 @@ String.prototype.hashCode = function() {
   
 let queue = [];
 let current = null;
-fetch("questions").then(r => r.json())
+fetch("questions.json").then(r => r.json())
 .then(data => {
     queue = data.Questions.sort(() => 0.5 - Math.random());
     const q = queue[0];
@@ -22,13 +22,13 @@ fetch("questions").then(r => r.json())
 })
 
 const markCorrect = () => {
-    $(".correct").removeClass("invisible")
-    $(".incorrect").addClass("invisible")
+    $(".correct").removeClass("d-none")
+    $(".incorrect").addClass("d-none")
 }
 
 const markIncorrect = () => {
-    $(".incorrect").removeClass("invisible")
-    $(".correct").addClass("invisible")
+    $(".incorrect").removeClass("d-none")
+    $(".correct").addClass("d-none")
 }
 
 const showMessage = (q) => {
@@ -139,8 +139,8 @@ const next = () => {
     const q = queue.shift()
     current = q;
     setQuestionHtml(q);
-    $(".incorrect").addClass("invisible");
-    $(".correct").addClass("invisible")
+    $(".incorrect").addClass("d-none");
+    $(".correct").addClass("d-none")
     $("#message").text("")
 }
 
