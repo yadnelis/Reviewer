@@ -1,10 +1,29 @@
 body {
-    background-color: rgb(181, 182, 208);
+    background-color: rgb(213, 213, 229);
+}
+
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
+    box-sizing: border-box;
     color: rgb(58, 57, 60);
 }
+
+nav {
+    background-color: rgb(218, 172, 187);
+    padding: 1rem 2rem;
+}
+
+nav a {
+    padding: .5rem 1rem;
+    color: rgb(78, 50, 96);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
 
 button {
     background-color: rgb(87, 87, 102);
@@ -47,4 +66,8 @@ button {
 }
 .text-template input{
     width: 50vw;
+}
+
+.mh-30 {
+    min-height: 30px;
 }

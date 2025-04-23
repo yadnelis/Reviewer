@@ -5,7 +5,7 @@
   "main": "Main.js",
   "scripts": {
     "test": "node main.js",
-    "start": "main.js"
+    "start": "node main.js"
   },
   "author": "Yadnelis",
   "license": "ISC",
