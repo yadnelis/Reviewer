@@ -57,7 +57,7 @@ jobs:
   deploy:
     permissions:
       contents: none
-    runs-on: windows-latest
+    runs-on: windows-2019
     needs: build
     environment:
       name: 'prod'
