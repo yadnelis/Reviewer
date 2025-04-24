@@ -10,6 +10,7 @@ async function main () {
     app.get('/', (req, res) => {
         res.sendFile('index.html', {root: './public'});
     })
+    
     app.get('/questions', (req, res) => {
         res.sendFile('questions.json', {root: './public'});
     })

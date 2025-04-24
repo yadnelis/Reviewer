@@ -1,26 +1,28 @@
 {
     "QuestionTypes": [
         "radio",
-        "checkbox",
+        "check",
         "torf",
         "text"
     ],
     "Questions": [
         {
+            "tag": "fibra",
             "prompt": "Que significa OTDR",
             "answer": "Optical Time Domain Reflectometer",
-            "message": "Answer: Optical Time Domain Reflectometer",
+            "lowerCase": true,
             "type": "text"
         },
         {
+            "tag": "fibra",
             "prompt": "El conector de fibra ST se parece al conector RJ-45",
             "answer": false,
-            "type": "torf"
+            "type": "torf",
+            "message": "El ST se parece al BNC"
         },
         {
             "tag": "puertos",
             "prompt": "Para que se usa el puerto 22?",
-            "scramble": true,
             "type": "radio",
             "choises": [
                 "SSH" ,
@@ -33,7 +35,6 @@
         {
             "tag": "puertos",
             "prompt": "Para que se usa el puerto 23?",
-            "scramble": true,
             "type": "radio",
             "choises": [
                 "SSH" ,
@@ -46,7 +47,6 @@
         {
             "tag": "puertos",
             "prompt": "Para que se usa el puerto 69?",
-            "scramble": true,
             "type": "radio",
             "choises": [
                 "SSH" ,
@@ -59,7 +59,6 @@
         {
             "tag": "puertos",
             "prompt": "Para que se usa el puerto 443?",
-            "scramble": true,
             "type": "radio",
             "choises": [
                 "SSH" ,
@@ -147,6 +146,1384 @@
                 "Single Mode"
             ],
             "answer": "Single Mode"
+        },
+        {
+            "tag": "fibra",
+            "prompt": "De que material está hecha la fibra?",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Silicio con Oxígeno",
+                "Boron con Hidrógeno",
+                "Silicio con Hidrógeno"
+            ],
+            "answer": "Silicio con Oxígeno"
+        },
+        {
+            "tag": "fibra",
+            "prompt": "Fibra con diametro 62.5/125 µm",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Multimode Step Index",
+                "Multimode Graded Index",
+                "Single Mode"
+            ],
+            "answer": "Multimode Step Index"
+        },
+        {
+            "tag": "fibra",
+            "prompt": "Fibra con diametro 50/125 µm",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Multimode Step Index",
+                "Multimode Graded Index",
+                "Single Mode"
+            ],
+            "answer": "Multimode Graded Index"
+        },
+        {
+            "tag": "fibra",
+            "prompt": "Fibra con diametro 8-10/125 µm",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Multimode Step Index",
+                "Multimode Graded Index",
+                "Single Mode"
+            ],
+            "answer": "Single Mode"
+        },
+        {
+            "tag": "fibra",
+            "prompt": "Distancias máximas de los cables de fibra:",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Multimode 3km, Single Mode 20Km",
+                "Multimode 10km, Single Mode 25Km",
+                "Multimode 10km, Single Mode 4Km"
+            ],
+            "answer": "Multimode 3km, Single Mode 20Km"
+        },
+        {
+            "tag": "fibra",
+            "prompt": "Velocidades de la fibra",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "100 MPS - 100 GPS",
+                "100 MPS - 20 GPS",
+                "500 MPS - 200 GPS",
+                "10 MPS - 1 GPS",
+                "300 MPS - 1000 GPS"
+            ],
+            "answer": "100 MPS - 100 GPS"
+        },
+        {
+            "tag": "fibra",
+            "prompt": "Orden de las partes de un cable de fibra (de adentro para afuera)",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Cubierta del cable, Fibras Protectoras, Cubierta, Nucleo",
+                "Nucleo, Cubierta, Fibras Protectoras, Cubierta del cable",
+                "Nucleo, Fibras Protectoras, Cubierta, Cubierta del cable"
+            ],
+            "answer": "Nucleo, Cubierta, Fibras Protectoras, Cubierta del cable"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Ancho de banda de los canales de circuitos WAN: ",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "64Kbps",
+                "32Kbps",
+                "100Kbps",
+                "200Kbps"
+            ],
+            "answer": "64Kbps"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Es un tipo de línea DSL. Consiste en una línea digital de alta velocidad. Siempre y cuando el alcance no supere los 4.7 km. medidos desde la Central Telefónica",
+            "type": "radio",
+            "choises": [
+                "ISDN",
+                "ADSL",
+                "SONET",
+                "Wimax",
+                "Cable Modem",
+                "BPL",
+                "T-1"
+            ],
+            "answer": "ADSL"
+        },
+        {
+           "tag": "circuitos",
+            "prompt": "Este tipo de señal genera una llamada telefónica tipo Dial-Up (Switching Circuit).",
+            "type": "radio",
+            "choises": [
+                "ISDN",
+                "ADSL",
+                "SONET",
+                "Wimax",
+                "Cable Modem",
+                "BPL",
+                "T-1"
+            ],
+            "answer": "ISDN"
+        },
+        {
+           "tag": "circuitos",
+            "prompt": "Conexiones digitales de punto a punto para proporcionar una amplia gama de servicios, tanto de voz como de datos y a la que los usuarios acceden a través de un conjunto de interfaces.",
+            "type": "radio",
+            "choises": [
+                "ISDN",
+                "ADSL",
+                "SONET",
+                "Wimax",
+                "Cable Modem",
+                "BPL",
+                "T-1"
+            ],
+            "answer": "ISDN"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "ISDN: Es el canal básico de 64 kbps para transporte de la información. Se puede usar para transferir datos digitales, voz digital codificada PCM.",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Canal B",
+                "Canal D"
+            ],
+            "answer": "Canal B"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "ISDN: Es un canal de señalización a 16 ó 64 kbps. Sirve para dos fines. Primero, lleva información de señalización para controlar las llamadas de circuitos conmutados asociadas con los canales [insert other]. Además  puede usarse para conmutación de paquetes de baja velocidad mientras no haya esperando información de señalización.",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Canal B",
+                "Canal D"
+            ],
+            "answer": "Canal D"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "El servicio principal BRI de ISDN: ",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Significa Basic Rate Interface y es usado en hogares y pequeños negocios",
+                "Significa Basic Rate Interface y es usado para negocios"
+            ],
+            "answer": "Significa Basic Rate Interface y es usado en hogares y pequeños negocios"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "El servicio principal PRI de ISDN: ",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Significa Primary Rate Interface y es usado en hogares y pequeños negocios",
+                "Significa Primary Rate Interface y es usado para negocios"
+            ],
+            "answer": "Significa Primary Rate Interface y es usado para negocios"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "El servicio principal BRI de ISDN: consiste en dos canales B full-duplex de 64 kbps y un canal D full-duplex de 16 kbps. Luego, la división en frames , la sincronización, y otros bits adicionales dan una velocidad total a un punto de acceso básico de 192 kbps.",
+            "type": "torf",
+            "answer": true
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "El servicio principal PRI de ISDN: 2B+D+señalización+sincronización+mantenimiento",
+            "type": "torf",
+            "answer": false,
+            "message": "BRI: 2B+D+señalización+sincronización+mantenimiento"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "El servicio principal PRI de ISDN tiene: Canales H: son canales destinados al transporte de flujos de información de usuario a altas velocidades, superiores a 64 kbps.",
+            "type": "torf",
+            "answer": true
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Velocidad PRI H0 = 384 kbps (equivalente a 6B-D)",
+            "type": "torf",
+            "answer": true
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Velocidad PRI H0 = 1472 kbps (equivalente a 23B-D)",
+            "type": "torf",
+            "answer": false,
+            "message": "H0 = 384 kbps (equivalente a 6B-D)"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Velocidad PRI H10 = 1536 kbps (equivalente a 24B-D)",
+            "type": "torf",
+            "answer": false,
+            "message": "H10 = 1472 kbps (equivalente a 23B-D)"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Velocidad PRI H10 = 1472 kbps (equivalente a 23B-D)",
+            "type": "torf",
+            "answer": true
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Velocidad PRI H11 = 1536 kbps (equivalente a 24B-D)",
+            "type": "torf",
+            "answer": true
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Velocidad PRI H11 = 384 kbps (equivalente a 6B-D)",
+            "type": "torf",
+            "answer": false,
+            "message": "H11 = 1536 kbps (equivalente a 24B-D)"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Velocidad PRI H12 = 1920 kbps (equivalente a 30B-D)",
+            "type": "torf",
+            "answer": true
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Velocidad PRI H12 = 2000 kbps (equivalente a 30B-D)",
+            "type": "torf",
+            "answer": false,
+            "message": "H12 1920 kbps (equivalente a 30B-D)"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Los circuitos ISDN no se pueden usar para conexiones de internet",
+            "type": "torf",
+            "answer": false
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Distancia máxima de una linea ADSL en KM: ",
+            "discardFormatting": true,
+            "type": "text",
+            "answer": "4.7Km"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Que significa ISDN?",
+            "lowerCase": true,
+            "type": "text",
+            "answer": "Integrated Service Digital Network"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Que significa ADSL?",
+            "lowerCase": true,
+            "type": "text",
+            "answer": "Asymmetric Digital Subscriber Line"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Utiliza un algoritmo de compresión de datos.",
+            "type": "radio",
+            "choises": [
+                "ISDN",
+                "ADSL",
+                "SONET",
+                "Wimax",
+                "Cable Modem",
+                "BPL",
+                "T-1"
+            ],
+            "answer": "ADSL"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Que es el splitter de un circuito ADSL",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Separa la señal telefónica convencional de la conexión de internet",
+                "Separa la señal telefónica convencional de la dial-up",
+                "Separa la señal telefónica convencional de la dial-up y de la conexión de internet"
+            ],
+            "answer": "Separa la señal telefónica convencional de la conexión de internet"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Por que el ADSL se denomina asimétrico",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Porque la velocidad de download es más alta que la velocidad de upload",
+                "Porque la velocidad de upload es más alta que la velocidad de download",
+                "Porque la velocidad de internet es mayor a la velocidad de telefono",
+                "Porque la velocidad de telefono es mayor a la velocidad de internet"
+            ],
+            "answer": "Porque la velocidad de download es más alta que la velocidad de upload"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "ADSL es una tecnología de acceso a Internet de banda ancha. Esto se consigue mediante la utilización de una banda de frecuencias más alta que la utilizada en la parte voz de la telefónicas convencionales (300-3.400 Hz) por lo que, para disponer de ADSL, es necesaria la instalación de un filtro (llamado splitter ) ",
+            "answer": true,
+            "type": "torf"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Los usuarios  disponen de conexión permanente a Internet. Esto es posible porque se dispone de conexión punto a punto (no Dial Up) Los achos de Banda son usualmente compartidos.",
+            "type": "radio",
+            "choises": [
+                "ISDN",
+                "ADSL",
+                "SONET",
+                "Wimax",
+                "Cable Modem",
+                "BPL",
+                "T-1"
+            ],
+            "answer": "ADSL"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "El router necesario para disponer de conexión de ISDN. Es frecuente que los ISPs provean este equipo.",
+            "answer": false,
+            "type": "torf",
+            "message": "Es el ADSL al que le aplica"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Las líneas digitales \"dedicadas\" posibilitan la transmisión de datos a velocidades medias y altas (de 64Kbps a 140 Mbps) a través de conexiones de punto a punto o multipunto.",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "ISDN",
+                "ADSL",
+                "SONET",
+                "Wimax",
+                "Cable Modem",
+                "BPL",
+                "T-1"
+            ],
+            "answer": "T-1"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "La línea T-1 es comúnmente usada hoy en día en conexiones de Proveedores de Servicios de Internet (ISP) hacia la Interne",
+            "type": "torf",
+            "answer": true
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Esta compuesta por 24 canales de 64kbps para un total de 1.44 Mbps",
+            "type": "radio",
+            "choises": [
+                "T-1",
+                "T-2",
+                "T-3",
+                "T-4"
+            ],
+            "answer": "T-1"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Esta compuesta por 96 canales de 64kbps para un total de 6.3 Mbps",
+            "type": "radio",
+            "choises": [
+                "T-1",
+                "T-2",
+                "T-3",
+                "T-4"
+            ],
+            "answer": "T-2"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Esta compuesta por 672 canales de 64kbps para un total de 45 Mbps",
+            "type": "radio",
+            "choises": [
+                "T-1",
+                "T-2",
+                "T-3",
+                "T-4"
+            ],
+            "answer": "T-3"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Esta compuesta por 4032 canales de 64kbps para un total de 275 Mbps",
+            "type": "radio",
+            "choises": [
+                "T-1",
+                "T-2",
+                "T-3",
+                "T-4"
+            ],
+            "answer": "T-4"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "fractional T carrier",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Pueden ser alquiladas de forma fraccionada (por canales). EJ. 8 canales = 512kbps",
+                "Pueden ser alquiladas por cada T1. Ej. 2xT1 = 4 lineas = 6.3 Mbps"
+            ],
+            "answer": "Pueden ser alquiladas de forma fraccionada (por canales). EJ. 8 canales = 512kbps"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Cuantas lineas T1 hay en un T2",
+            "discardFormatting": true,
+            "type": "text",
+            "answer": "4"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Cuantas lineas T1 hay en un T3",
+            "discardFormatting": true,
+            "type": "text",
+            "answer": "28"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Cuantas lineas T1 hay en un T4",
+            "discardFormatting": true,
+            "type": "text",
+            "answer": "168"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Servicio digital dedicado conectado físicamente por Fibra Óptica. Se conoce como OC",
+            "type": "radio",
+            "choises": [
+                "ISDN",
+                "ADSL",
+                "SONET",
+                "Wimax",
+                "Cable Modem",
+                "BPL"
+            ],
+            "answer": "SONET"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "OC - # = # * OC-1S",
+            "type": "radio",
+            "choises": [
+                "ISDN",
+                "ADSL",
+                "SONET",
+                "Wimax",
+                "Cable Modem",
+                "BPL",
+                "T-1"
+            ],
+            "answer": "SONET"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Alcanzan Velocidades desde 51.8 Mbps hasta 39.813 Gbps",
+            "type": "radio",
+            "choises": [
+                "ISDN",
+                "ADSL",
+                "SONET",
+                "Wimax",
+                "Cable Modem",
+                "BPL",
+                "T-1"
+            ],
+            "answer": "SONET"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Velocidad de OC-1 escrito en Mpbs",
+            "discardFormatting": true,
+            "type": "text",
+            "answer": "51.8Mpbs"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Que significa SONET",
+            "lowerCase": true,
+            "type": "text",
+            "answer": "Synchronous Optical Network"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Si OC-1 es 51.8Mpbs cuanto es OC-3",
+            "type": "radio",
+            "choises": [
+                "51.8 Mpbs",
+                "155.5 Mpbs",
+                "466.6 Mpbs",
+                "622.1 Mpbs",
+                "1.244 Gpbs",
+                "2.488 Gbps",
+                "9.954 Gbps",
+                "39.813 Gbps"
+            ],
+            "answer": "155.5 Mpbs"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Si OC-1 es 51.8Mpbs cuanto es OC-9",
+            "type": "radio",
+            "choises": [
+                "51.8 Mpbs",
+                "155.5 Mpbs",
+                "466.6 Mpbs",
+                "622.1 Mpbs",
+                "1.244 Gpbs",
+                "2.488 Gbps",
+                "9.954 Gbps",
+                "39.813 Gbps"
+            ],
+            "answer": "466.6 Mpbs"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Si OC-1 es 51.8Mpbs cuanto es OC-12",
+            "type": "radio",
+            "choises": [
+                "51.8 Mpbs",
+                "155.5 Mpbs",
+                "466.6 Mpbs",
+                "622.1 Mpbs",
+                "1.244 Gpbs",
+                "2.488 Gbps",
+                "9.954 Gbps",
+                "39.813 Gbps"
+            ],
+            "answer": "622.1 Mpbs"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Si OC-1 es 51.8Mpbs cuanto es OC-24",
+            "type": "radio",
+            "choises": [
+                "51.8 Mpbs",
+                "155.5 Mpbs",
+                "466.6 Mpbs",
+                "622.1 Mpbs",
+                "1.244 Gpbs",
+                "2.488 Gbps",
+                "9.954 Gbps",
+                "39.813 Gbps"
+            ],
+            "answer": "1.244 Gpbs"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Si OC-1 es 51.8Mpbs cuanto es OC-48",
+            "type": "radio",
+            "choises": [
+                "51.8 Mpbs",
+                "155.5 Mpbs",
+                "466.6 Mpbs",
+                "622.1 Mpbs",
+                "1.244 Gpbs",
+                "2.488 Gbps",
+                "9.954 Gbps",
+                "39.813 Gbps"
+            ],
+            "answer": "2.488 Gbps"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Si OC-1 es 51.8Mpbs cuanto es OC-192",
+            "type": "radio",
+            "choises": [
+                "51.8 Mpbs",
+                "155.5 Mpbs",
+                "466.6 Mpbs",
+                "622.1 Mpbs",
+                "1.244 Gpbs",
+                "2.488 Gbps",
+                "9.954 Gbps",
+                "39.813 Gbps"
+            ],
+            "answer": "9.954 Gbps"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Si OC-1 es 51.8Mpbs cuanto es OC-768",
+            "type": "radio",
+            "choises": [
+                "51.8 Mpbs",
+                "155.5 Mpbs",
+                "466.6 Mpbs",
+                "622.1 Mpbs",
+                "1.244 Gpbs",
+                "2.488 Gbps",
+                "9.954 Gbps",
+                "39.813 Gbps"
+            ],
+            "answer": "39.813 Gbps"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "CMTS",
+            "type": "radio",
+            "choises": [
+                "ISDN",
+                "ADSL",
+                "SONET",
+                "Wimax",
+                "Cable Modem",
+                "BPL",
+                "T-1"
+            ],
+            "answer": "Cable Modem"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Se utilizan principalmente para distribuir el acceso a Internet de banda ancha, aprovechando el ancho de banda que no se utiliza en la red de TV por cable.",
+            "type": "radio",
+            "choises": [
+                "ISDN",
+                "ADSL",
+                "SONET",
+                "Wimax",
+                "Cable Modem",
+                "BPL",
+                "T-1"
+            ],
+            "answer": "Cable Modem"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "CMTS (Cable Modem Termination System)-Es un equipo que se encuentra normalmente en la cabecera de la compañía de cable y se utiliza para proporcionar servicios de datos de alta velocidad, como o Voz sobre IP, a los abonados. ",
+            "type": "torf",
+            "answer": true
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Wireless (Microwaves)",
+            "type": "radio",
+            "choises": [
+                "ISDN",
+                "ADSL",
+                "SONET",
+                "Wimax",
+                "Cable Modem",
+                "BPL",
+                "T-1"
+            ],
+            "answer": "Wimax"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Utiliza las ondas de radio en las frecuencias de 2.5 y 3.5 Ghz",
+            "type": "radio",
+            "choises": [
+                "ISDN",
+                "ADSL",
+                "SONET",
+                "Wimax",
+                "Cable Modem",
+                "BPL",
+                "T-1"
+            ],
+            "answer": "Wimax"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Una de sus ventajas es dar servicios de banda ancha en zonas remotas donde no llega cablemodem o ADSL.",
+            "type": "radio",
+            "choises": [
+                "ISDN",
+                "ADSL",
+                "SONET",
+                "Wimax",
+                "Cable Modem",
+                "BPL",
+                "T-1"
+            ],
+            "answer": "Wimax"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "La primera en ofrecer datos en celulares. Utiliza ondas de radio para la transmisión de los mismos. Hasta 10 Kbps.",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "GSM",
+                "UMTS (3G)",
+                "HDSPA",
+                "HDSPA+",
+                "LTE (4G)"
+            ],
+            "answer": "GSM"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Permite hasta 2 Mbps de velocidad.",
+            "type": "radio",
+            "choises": [
+                "GSM",
+                "UMTS (3G)",
+                "HDSPA",
+                "HDSPA+",
+                "LTE (4G)"
+            ],
+            "answer": "UMTS (3G)"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Permite hasta 14 Mbps",
+            "type": "radio",
+            "choises": [
+                "GSM",
+                "UMTS (3G)",
+                "HDSPA",
+                "HDSPA+",
+                "LTE (4G)"
+            ],
+            "answer": "HDSPA"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Permite hasta 80 Mbps",
+            "type": "radio",
+            "choises": [
+                "GSM",
+                "UMTS (3G)",
+                "HDSPA",
+                "HDSPA+",
+                "LTE (4G)"
+            ],
+            "answer": "HDSPA+"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Se pueden obtener velocidades hasta 100 Mbps o 200 Mbps en algunos casos.",
+            "type": "radio",
+            "choises": [
+                "GSM",
+                "UMTS (3G)",
+                "HDSPA",
+                "HDSPA+",
+                "LTE (4G)"
+            ],
+            "answer": "LTE (4G)"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Disponible desde el 2014.",
+            "type": "radio",
+            "choises": [
+                "GSM",
+                "UMTS (3G)",
+                "HDSPA",
+                "HDSPA+",
+                "LTE (4G)"
+            ],
+            "answer": "LTE (4G)"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Comunicaciones mediante cable eléctrico",
+            "type": "radio",
+            "choises": [
+                "ISDN",
+                "ADSL",
+                "SONET",
+                "Wimax",
+                "Cable Modem",
+                "BPL",
+                "T-1"
+            ],
+            "answer": "BPL"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Significado de BPL",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Base Primary Lines",
+                "Broadband over Power Lines",
+                "Baseband Primary Lines",
+                "Bi-Directional Power Lines"
+            ],
+            "answer": "Broadband over Power Lines"
+        },
+        {
+            "tag": "circuitos",
+            "prompt": "Frecuencia entre los 20 y 200 kHz",
+            "type": "radio",
+            "choises": [
+                "ISDN",
+                "ADSL",
+                "SONET",
+                "Wimax",
+                "Cable Modem",
+                "BPL",
+                "T-1"
+            ],
+            "answer": "BPL"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "se utiliza mayormente en configuración end-user to switch. En esta configuración llega el paquete, lo almacena, lo analiza verificando su integridad y luego lo envía.",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Store and Forward",
+                "Cut-Trough",
+                "Fragment Free"
+            ],
+            "answer": "Store and Forward"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Poco más lento (delay) tiene que esperar que llegue el frame completo.",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Store and Forward",
+                "Cut-Trough",
+                "Fragment Free"
+            ],
+            "answer": "Store and Forward"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Este formato sólo mira el destino del frame y el CRC (Ciclical Redundancy cheak) para ver si trae errores. Lo comienza a trasmitir antes que siquiera llegue completo",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Store and Forward",
+                "Cut-Trough",
+                "Fragment Free"
+            ],
+            "answer": "Cut-Trough"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Es un formato híbrido. Este solo mira el destino, pero no hace forward hasta verificar los primeros 64 bits del frame. Se usa para verificar la colisiones antes de hacer foward.",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Store and Forward",
+                "Cut-Trough",
+                "Fragment Free"
+            ],
+            "answer": "Fragment Free"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "switch(config) # no switching-mode store-forward",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Store and Forward",
+                "Cut-Trough",
+                "Fragment Free"
+            ],
+            "answer": "Cut-Trough"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Cuál es la capa 1?",
+            "scramble": true,
+            "img": "img/jerarquia.png",
+            "type": "radio",
+            "choises": [
+                "Core Layer",
+                "Distribution Layer",
+                "Access Layer"
+            ],
+            "answer": "Core Layer"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Cuál es la capa 2?",
+            "scramble": true,
+            "img": "img/jerarquia.png",
+            "type": "radio",
+            "choises": [
+                "Core Layer",
+                "Distribution Layer",
+                "Access Layer"
+            ],
+            "answer": "Distribution Layer"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Cuál es la capa 3?",
+            "scramble": true,
+            "img": "img/jerarquia.png",
+            "type": "radio",
+            "choises": [
+                "Core Layer",
+                "Distribution Layer",
+                "Access Layer"
+            ],
+            "answer": "Access Layer"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Mech topology switch (Cut-trough). Busca redundancia. Necesita el protocolo STP.",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Implementacion tipo distribution",
+                "Implementacion tipo type-core"
+            ],
+            "answer": "Implementacion tipo distribution"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Utiliza un switch/router central. Ejemplo campus network.",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Implementacion tipo distribution",
+                "Implementacion tipo type-core"
+            ],
+            "answer": "Implementacion tipo type-core"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "La implementación tipo Type-Core utiliza STP (spannig tree protocol)",
+            "type": "torf",
+            "answer": false,
+            "message": "La implementación tipo distributed es la que usa STP"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Que significa IOS?",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Inter-Communication Operating System",
+                "IPhone Operating System",
+                "Internet Operating System",
+                "Information Operating System"
+            ],
+            "answer": "Inter-Communication Operating System"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Es un sistema operativo de los switches y routers de modo carácter base. Hay distintas versiones y mucho comandos. Es bastante complejo",
+            "type": "radio",
+            "choises": [
+                "IOS",
+                "SDM",
+                "Hyperterminal",
+                "Telnet",
+                "SSH",
+                "TFTP"
+            ],
+            "answer": "IOS"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Es una versión gráfica del S.O. del Switch o Router.",
+            "type": "radio",
+            "choises": [
+                "IOS",
+                "SDM",
+                "Hyperterminal",
+                "Telnet",
+                "SSH",
+                "TFTP"
+            ],
+            "answer": "SDM"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Que significa SDM",
+            "type": "text",
+            "lowerCase": true,
+            "answer": "Security Device Manager"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Que es Putty.exe?",
+            "type": "radio",
+            "choises": [
+                "IOS",
+                "SDM",
+                "Hyperterminal",
+                "Telnet",
+                "SSH",
+                "TFTP"
+            ],
+            "answer": "Hyperterminal"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Esta consola venia por default en los sistemas operativos de Microsoft hasta Windows XP.",
+            "type": "radio",
+            "choises": [
+                "IOS",
+                "SDM",
+                "Hyperterminal",
+                "Telnet",
+                "SSH",
+                "TFTP"
+            ],
+            "answer": "Hyperterminal"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Consola de command line. Viene en todos los sistemas operativos de Microsoft a pesar de estar disable /off en los servicios",
+            "type": "radio",
+            "choises": [
+                "IOS",
+                "SDM",
+                "Hyperterminal",
+                "Telnet",
+                "SSH",
+                "TFTP"
+            ],
+            "answer": "Telnet"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Es conexión insegura de texto plano",
+            "type": "radio",
+            "choises": [
+                "IOS",
+                "SDM",
+                "Hyperterminal",
+                "Telnet",
+                "SSH",
+                "TFTP"
+            ],
+            "answer": "Telnet"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Es una consola segura que utiliza el puerto 22",
+            "type": "radio",
+            "choises": [
+                "IOS",
+                "SDM",
+                "Hyperterminal",
+                "Telnet",
+                "SSH",
+                "TFTP"
+            ],
+            "answer": "SSH"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Consola que viene con windows. Usa port 69",
+            "type": "radio",
+            "choises": [
+                "IOS",
+                "SDM",
+                "Hyperterminal",
+                "Telnet",
+                "SSH",
+                "TFTP"
+            ],
+            "answer": "TFTP"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Los Switches o Router que *lo* tienen traen el CD/DVD de la aplicación la cual tiene que ser instalada en la computadora y usualmente se conecta por el puerto de Ethernet del dispositivo (consola)",
+            "type": "radio",
+            "choises": [
+                "IOS",
+                "SDM",
+                "Hyperterminal",
+                "Telnet",
+                "SSH",
+                "TFTP"
+            ],
+            "answer": "SDM"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Telnet se puede asegurar con certificado digital de seguridad SSL que usa port 443",
+            "type": "torf",
+            "answer": true
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Que significa SSH",
+            "type": "text",
+            "lowerCase": true,
+            "answer": "Secure Shell"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Que significa TFTP",
+            "type": "text",
+            "lowerCase": true,
+            "answer": "Trivial File transfer protocol"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "User mode: sólo para ver la configuración.",
+            "type": "radio",
+            "choises": [
+                "nombre >",
+                "nombre #",
+                "nombre (config) #"
+            ],
+            "answer": "nombre >"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Execute mode: permite tareas de mantenimiento.",
+            "type": "radio",
+            "choises": [
+                "nombre >",
+                "nombre #",
+                "nombre (config) #"
+            ],
+            "answer": "nombre #"
+        },
+        {
+            "tag": "intro_switches",
+            "prompt": "Configuration Mode: para tareas de configuración.",
+            "type": "radio",
+            "choises": [
+                "nombre >",
+                "nombre #",
+                "nombre (config) #"
+            ],
+            "answer": "nombre (config) #"
+        },
+        {
+            "tag": "IEEE_802.1q",
+            "prompt": "Que significa VLAN",
+            "type": "text",
+            "lowerCase": true,
+            "answer": "Virtual Local Area Network"
+        },
+        {
+            "tag": "IEEE_802.1q",
+            "prompt": "Red de área local virtual es un grupo flexible de dispositivos que se encuentran en cualquier ubicación de una red de área local, pero que se comunican como si estuvieran en el mismo segmento físico.",
+            "type": "radio",
+            "choises": [
+                "VLAN",
+                "LAN",
+                "Switch",
+                "Cluster",
+                "Distributed Group",
+                "Trunk",
+                "IEEE 802.1q",
+                "IEEE 802.3"
+            ],
+            "answer": "VLAN"
+        },
+        {
+            "tag": "IEEE_802.1q",
+            "prompt": "Se puede segmentar o separar el tráfico de la red sin restringirse a las ubicaciones o conexiones físicas.",
+            "type": "radio",
+            "choises": [
+                "VLAN",
+                "LAN",
+                "Cluster",
+                "Switch",
+                "Distributed Group",
+                "Trunk",
+                "IEEE 802.1q",
+                "IEEE 802.3"
+            ],
+            "answer": "VLAN"
+        },
+        {
+            "tag": "IEEE_802.1q",
+            "prompt": "Es el mecanismo que permite a multiples redes o VLAN compartir, de forma transparente el mismo medio físico conocido como TRUNK.",
+            "type": "radio",
+            "choises": [
+                "VLAN",
+                "LAN",
+                "Cluster",
+                "Switch",
+                "Distributed Group",
+                "IEEE 802.1q",
+                "IEEE 802.3"
+            ],
+            "answer": "IEEE 802.1q"
+        },
+        {
+            "tag": "IEEE_802.1q",
+            "prompt": "Permite identificar a una trama proveniente de un equipo conectado a una red determinada. Una trama perteneciente a un VLAN sólo se va a distribuir a los equipos que pertenezcan a su misma VLAN, de forma que se separan dominios de broadcast.",
+            "type": "radio",
+            "choises": [
+                "VLAN",
+                "LAN",
+                "Cluster",
+                "Switch",
+                "Distributed Group",
+                "IEEE 802.1q",
+                "IEEE 802.3"
+            ],
+            "answer": "IEEE 802.1q"
+        },
+        {
+            "tag": "IEEE_802.1q",
+            "prompt": "Los 4 bytes de encabezamiento que se añaden cuando se usa el estandard 802.1q",
+            "type": "radio",
+            "discardFormatting": true,
+            "answer": "Tag"
+        },
+        {
+            "tag": "IEEE_802.1q",
+            "prompt": "Se conectan las estaciones directamente. Cuando entra una trama Ethernet se le añade el TAG de 802.1Q. Cuando sale una trama 802.1Q se le quita el TAG, para que llegue a la estación correspondiente con el formato IEEE 802.3 original.",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Puertos de acceso",
+                "Puertos 1Q Trunk",
+                "VLAN Nativo",
+                "VLAN"
+            ],
+            "answer": "Puertos de acceso"
+        },
+        {
+            "tag": "IEEE_802.1q",
+            "prompt": "Se utilizan para conectar Switches entre si y routers para que pase el tráfico de diferentes VLANs a través de ellos. Las tramas que le llegan y que salen llevan el Tag 802.1Q.",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Puertos de acceso",
+                "Puertos 1Q Trunk",
+                "VLAN Nativo",
+                "VLAN"
+            ],
+            "answer": "Puertos 1Q Trunk"
+        },
+        {
+            "tag": "IEEE_802.1q",
+            "prompt": "No se taggea cuando se envía por medio de trunking",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Puertos de acceso",
+                "Puertos 1Q Trunk",
+                "VLAN Nativo",
+                "VLAN"
+            ],
+            "answer": "VLAN Nativo"
+        },
+        {
+            "tag": "IEEE_802.1q",
+            "prompt": "Se le conoce como VLAN de administración",
+            "scramble": true,
+            "type": "radio",
+            "choises": [
+                "Puertos de acceso",
+                "Puertos 1Q Trunk",
+                "VLAN Nativo",
+                "VLAN"
+            ],
+            "answer": "VLAN Nativo"
+        },
+        {
+            "tag": "comandos",
+            "prompt": "IOS: Entra en al modo execute",
+            "type": "text",
+            "lowerCase": true,
+            "answer": "enable"
+        },
+        {
+            "tag": "comandos",
+            "prompt": "IOS: Entra en al modo configuración",
+            "type": "text",
+            "lowerCase": true,
+            "answer": "configure terminal"
+        },
+        {
+            "tag": "comandos",
+            "prompt": "IOS: Estas en el modo configuración del VLAN, como le cambias el nombre a 'stu'",
+            "type": "text",
+            "lowerCase": true,
+            "answer": "name stu"
+        },
+        {
+            "tag": "comandos",
+            "prompt": "IOS: Entra en el modo de configuración de la interfaz 0/6",
+            "type": "text",
+            "lowerCase": true,
+            "answer": "interface fa0/6"
+        },
+        {
+            "tag": "comandos",
+            "prompt": "IOS: Para cambiar el vlan de una interfaz hay que escribir: ",
+            "type": "radio",
+            "lowerCase": true,
+            "choises": [
+                "switchport mode access",
+                "switchport mode trunk"
+            ],
+            "answer": "switchport mode access"
+        },
+        {
+            "tag": "comandos",
+            "prompt": "IOS: Ya escribiste 'switchport mode access', ahora cambia la interfaz al vlan 10",
+            "type": "text",
+            "lowerCase": true,
+            "answer": "switchport access vlan 10"
+        },
+        {
+            "tag": "comandos",
+            "prompt": "IOS: Ya estas en el modo configuración de la interfaz: cambia la interfaz a trunk",
+            "type": "text",
+            "lowerCase": true,
+            "answer": "switchport mode trunk"
+        },
+        {
+            "tag": "comandos",
+            "prompt": "IOS: Cambia la contraseña del CLI a line@123",
+            "type": "radio",
+            "choises": [
+                "switch # (config-line) password line@123",
+                "switch # (config) enable secret line@123"
+            ],
+            "answer": "switch # (config-line) password line@123"
+        },
+        {
+            "tag": "comandos",
+            "prompt": "IOS: Cambia la contraseña del modo execute a secret @123",
+            "type": "radio",
+            "choises": [
+                "switch # (config-line) password secret@123",
+                "switch # (config) enable secret secret@123"
+            ],
+            "answer": "switch # (config) enable secret secret@123"
+        },
+        {
+            "tag": "comandos",
+            "prompt": "La contraseña del CLI está en line con 0",
+            "type": "torf",
+            "message": "Si, antes de escribir 'password line@123' tienes que escribir line con 0",
+            "answer": true
+        },
+        {
+            "tag": "comandos",
+            "prompt": "IOS: Vuelve al inicio",
+            "type": "text",
+            "lowerCase": true,
+            "answer": "end"
+        },
+        {
+            "tag": "comandos",
+            "prompt": "IOS: Vuelve al modo anterior",
+            "type": "text",
+            "lowerCase": true,
+            "answer": "exit"
         }
     ]    
 }
