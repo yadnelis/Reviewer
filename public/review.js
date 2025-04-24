@@ -1,6 +1,6 @@
 let queue = [];
 let current = null;
-fetch("questions.json").then(r => r.json())
+fetch("questions").then(r => r.json())
 .then(data => {
     var cont = $("#questions-cont")
     queue = data.Questions.map(q => {
@@ -9,6 +9,15 @@ fetch("questions.json").then(r => r.json())
             $("<p>")
             .addClass("r-prompt")
             .text(q.prompt)
+        )
+        .append(
+            $("<p>")
+            .append(
+                $("<span>")
+                .addClass("tag rounded px-2 py1")
+                .addClass(q.tag)
+                .text(q.tag)
+            )
         )
         .append(
             $("<p>")
