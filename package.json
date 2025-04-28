@@ -4,12 +4,16 @@
   "description": "Easy Json based test review builder",
   "main": "Main.js",
   "scripts": {
-    "test": "node main.js",
-    "start": "node main.js"
+    "dev": "node --env-file=.env.dev main.js",
+    "start": "node --env-file=.env.prod main.js"
   },
   "author": "Yadnelis",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0"
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "mongodb": "^6.16.0"
   }
 }
