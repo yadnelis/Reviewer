@@ -1,6 +1,6 @@
 /**************** QUERY *************************/
 const { useQuestions } = require("../handlers/questions_handlers")
-const { apiResult, handleRes, status } = require("../apiHelpers.js")
+const { apiResult, handleRes, status } = require("../api_helpers")
 
 exports.initQuestionsHandler = (app, ctx) => {
     app.get('/:course/questions', async (req, res) => {

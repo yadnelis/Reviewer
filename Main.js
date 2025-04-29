@@ -21,7 +21,6 @@ function setMiddleware(app)
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(express.static('./clientapp/dist'));
     app.use(express.static('./public'));
-
     console.log('configured app middleware')
 }
 
@@ -31,7 +30,7 @@ async function main () {
         app.use(express.static('./public'));
         
         app.get('/', (req, res) => {
-            res.sendFile('index.html', {root: './public'});
+            res.sendFile('app/index.html', {root: './public'});
         })
         
         app.get('/deprecated-questions', (req, res) => {
