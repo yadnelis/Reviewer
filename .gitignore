@@ -1,1 +1,26 @@
-/node_modules
+node_modules
+
+# Logs
+reviewer.app/logs
+reviewer.app/*.log
+reviewer.app/npm-debug.log*
+reviewer.app/yarn-debug.log*
+reviewer.app/yarn-error.log*
+reviewer.app/pnpm-debug.log*
+reviewer.app/lerna-debug.log*
+
+reviewer.app/node_modules
+reviewer.app/dist
+reviewer.app/dist-ssr
+reviewer.app/*.local
+
+reviewer.app/# Editor directories and files
+reviewer.app/.vscode/*
+reviewer.app/!.vscode/extensions.json
+reviewer.app/.idea
+reviewer.app/.DS_Store
+reviewer.app/*.suo
+reviewer.app/*.ntvs*
+reviewer.app/*.njsproj
+reviewer.app/*.sln
+reviewer.app/*.sw?
