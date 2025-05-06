@@ -1,0 +1,70 @@
+@use '../pallette' as *;
+
+.review-page {
+    
+    .questions {
+        display: flex; 
+        flex-wrap: wrap;
+        margin: 3%;
+        .review-detail {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-width: 15rem;
+            width: fit-content;
+            // max-width: 97%;
+            justify-content: space-between;
+            gap: 0.5em;
+            padding: 14px;
+            background-color: $darker-gray;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.24);
+            margin: 14px auto;
+        
+            .button-row {
+                display: flex;
+                justify-content: end;
+                height: fit-content;
+                gap: 1em;
+            }
+        }
+
+        .yr-edit-question-container {
+            margin: 8px;
+            padding: 8px;
+            background-color:  $dark-gray;
+            border-radius: 8px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.24);
+        }
+    }
+}
+
+.yr-edit-question-container {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+    }
+
+    label {
+        word-break: break-all;
+    }
+}
+
+.new-question-container {
+    background-color: $darkest-gray;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.24);
+    padding: 16px;
+
+    .yr-edit-question-container {
+        background-color: transparent;
+    }
+
+    .header {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    // align-items: center;
+}

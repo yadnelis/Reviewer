@@ -1,0 +1,83 @@
+@use "../pallette" as *;
+
+.yr-test-page {
+    display: grid;
+    grid-template-rows: min-content minmax(0, 1fr) min-content;
+
+    
+    .question-container{
+        padding: 30px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100;
+
+        .totals {
+            display: flex;
+            justify-content: end;
+            width: 100%;
+            margin-bottom: 8px;
+            color: $text-medium;
+        }
+
+        .answer-banner {
+            width: 100%;
+            display: flex;
+            top: -70px;
+            justify-content: center;
+            position: absolute;
+            >div {
+                width: 100%;
+                max-width: 400px;
+                border-radius: 4px;
+                padding: 4px 16px;
+            }
+            .right {
+                background-color: $yr-semantic-green;
+                color: $yr-semantic-green-dark;
+            }
+            .wrong {
+                background-color: $yr-semantic-red;
+                color: $text-light;
+            }
+        }
+
+        .question-card {
+            --focus-visible-color: #{$yr-main-0};
+            --input-background-color: #{$dark-gray};
+            --input-text-color: #{$text-light};
+            box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.601);
+            background-color: $darkest-gray;
+            border: 2px solid $yr-main-2;
+            color: $text-light;
+
+            
+            min-height: 15rem;
+            height: fit-content;
+            padding: 24px;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            
+            transition: height 2s;
+            
+            .test-question {
+                height: 100%;
+                display: grid;
+                grid-template-rows: min-content auto min-content;
+                gap: 8px;
+            }
+            
+        }
+
+        .right {
+            color: $yr-semantic-green;
+        }
+
+        .wrong {
+            color: $yr-semantic-red;
+        }
+    }   
+}

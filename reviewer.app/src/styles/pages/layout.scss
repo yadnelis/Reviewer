@@ -1,0 +1,27 @@
+@use "../pallette" as *;
+
+.yr-main-layout {
+    display: grid; 
+    height: 100dvh;
+    width: 100vw;
+    overflow: hidden;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+
+    >:nth-child(2) {
+        overflow: scroll;
+    }
+
+    .yr-footer {
+        background-color: $darkest-gray;
+        // display: flex;
+        // justify-content: end;
+        font-size: 0.8rem;
+        color: $text-semi-dark;
+        font-weight: 600;
+        gap: 14px;
+        padding: 0 8px;
+        .label {
+            font-weight: 500;
+        }
+    }
+}
