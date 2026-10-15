@@ -1,0 +1,86 @@
+
+
+@use "./pallette" as *;
+@use "./utilities" as *;
+
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: $text-light;
+}
+
+body {
+    color: $text-light;
+}
+
+button {
+    color: $text-light;
+    border-radius: 4px;
+    padding: 4px 8px;
+    background-color: $darker-gray;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.083);
+
+    &.btn-primary {
+        background-color: $yr-main-4;
+        color: $text-light;
+        &:active, &:hover {
+            color: $text-light;
+            background-color: $yr-main-3;
+        }
+    }
+    &.btn-secondary {
+        background-color: $yr-main-2;
+        color: $text-dark;
+        &:active, &:hover {
+            color: $text-dark !important;
+            background-color: $yr-main-1 !important;
+        }
+    }
+}
+
+button, input {
+    &:focus-visible {
+        outline: 2px solid var(--focus-visible-color);
+    }
+}
+
+input[type=text], select {
+    background-color: var(--input-background-color);
+    border: 1px solid $darkest-gray;
+    color: var(--input-text-color);
+    padding: 0 8px;
+}
+
+select {
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+body {
+    background-color: $darker-gray;
+}
+
+a {
+    text-decoration: none;
+    color: $text-semi-light;
+    font-weight: 500;
+
+    &:active,
+    &:hover {
+        color: $yr-main-1;
+    }
+}
+
+

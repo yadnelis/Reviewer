@@ -1,0 +1,19 @@
+
+@use "../utilities" as *;
+@use "../pallette" as *;
+
+.yr-main-menu {
+    width: 50vw;
+    max-width: 300px;
+    display: flex;
+    gap: 8px;
+    .yr-menu-link {
+        display: inline-block;
+        padding: 4px;
+        &:hover,
+        &:active {
+            background-color: $yr-main-3;
+            border-radius: 4px;
+        }
+    }
+}

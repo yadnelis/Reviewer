@@ -1,0 +1,11 @@
+@use "./global.scss";
+@use "./pallette" as *;
+@use "./NavigationBar.scss";
+
+@use "./lib/Modal.scss";
+
+@use "./portals/MainMenu.scss";
+@use "./portals/LogInModal.scss";
+@use "./pages/layout.scss";
+@use "./pages/TestPage.scss";
+@use "./pages/ReviewPage.scss";
