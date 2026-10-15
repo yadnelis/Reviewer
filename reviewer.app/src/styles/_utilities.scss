@@ -1,0 +1,54 @@
+@use "./pallette" as *;
+
+:root {
+    --focus-visible-color: #{$yr-main-2};
+    --input-background-color: #{$dark-gray};
+    --input-text-color: #{$text-light};
+}
+
+.yr-text-light { color: $text-light; }
+.yr-text-semi-light { color: $text-semi-light; }
+.yr-text-medium     { color: $text-medium; }
+.yr-text-semi-dark  { color: $text-semi-dark; }
+.yr-text-dark       { color: $text-dark; }
+
+.yr-text-main-1     { color: $yr-main-1; }
+.yr-text-main-2     { color: $yr-main-2; }
+.yr-text-main-3     { color: $yr-main-3; }
+.yr-text-main-4     { color: $yr-main-4; }
+
+/* Background */
+.yr-bg-main-1       { background-color: $yr-main-1; }
+.yr-bg-main-2       { background-color: $yr-main-2; }
+.yr-bg-main-3       { background-color: $yr-main-3; }
+.yr-bg-main-4       { background-color: $yr-main-4; }
+
+.yr-bg-dark-gray    { background-color: $dark-gray; }
+.yr-bg-darker-gray  { background-color: $darker-gray; }
+.yr-bg-darkest-gray { background-color: $darkest-gray; }
+
+.h-fit { height: fit-content; }
+.w-fit { width: fit-content; }
+
+.fs-8 { font-size: 8px;}
+.fs-12 { font-size: 12px;}
+.fs-14 { font-size: 14px;}
+.fs-16 { font-size: 16px;}
+.fs-24 { font-size: 24px;}
+.fs-38 { font-size: 38px;}
+
+.fw-400 { font-weight: 400; }
+.fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
+.fw-800 { font-weight: 800; }
+
+.column-gap-1 { column-gap: 4px; }
+.column-gap-2 { column-gap: 8px; }
+.column-gap-3 { column-gap: 14px; }
+.column-gap-4 { column-gap: 16px; }
+
+.row-gap-1 { row-gap: 4px; }
+.row-gap-2 { row-gap: 8px; }
+.row-gap-3 { row-gap: 14px; }
+.row-gap-4 { row-gap: 16px; }

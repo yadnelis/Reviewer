@@ -1,0 +1,31 @@
+@use "../utilities" as *;
+@use "../pallette" as *;
+
+.yr-log-in-cont {
+    height: 300px;
+    width: 300px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 24px;
+    .header-cont{
+        .title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    .inputs-cont{
+        margin: 16px;
+        gap: 16px;
+        display: grid;
+        grid-template-columns: auto max-content;
+        .yr-text-label {
+            color: $text-semi-light;
+            font-weight: 600;
+        }
+
+    }
+
+}

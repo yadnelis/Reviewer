@@ -1,0 +1,87 @@
+@use "../pallette" as *;
+
+.yr-portal{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+    
+    &.hide {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &.left-panel {
+        justify-content: start;
+        width: fit-content;
+    }
+    &.right-panel {
+        justify-content: end;
+        width: fit-content;
+    }
+    &.top-panel {
+        align-items: start;
+        height: fit-content;
+    }
+    &.bottom-panel {
+        align-items: end;
+        height: fit-content;
+    }
+
+    .yr-portal-content{
+        background-color: $dark-gray;
+        position: relative;
+
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+
+        transition: all 0.3s ease;
+
+        &.left-panel {
+            height: 100%;
+            width: fit-content;
+            &.hide {
+                left: -100%;
+            }
+        }
+    
+        &.right-panel {
+            height: 100%;
+            width: fit-content;
+            &.hide {
+                right: -100%;
+            }
+    
+        }
+    
+        &.bottom-panel {
+            height: fit-content;
+            width: 100%;
+            &.hide {
+                bottom: -100%;
+            }
+        }
+    
+        &.top-panel {
+            height: fit-content;
+            width: 100%;
+            &.hide {
+                top: -100%;
+            }
+        }
+    }
+
+}
